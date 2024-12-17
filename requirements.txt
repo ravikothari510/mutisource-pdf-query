@@ -1,0 +1,17 @@
+# %pip install -Uq "unstructured[pdf]" pillow lxml 
+# %pip install -Uq chromadb tiktoken
+# %pip install -U langchain langchain-community langchain-openai langchain-groq
+# %pip install -Uq python_dotenv ipykernel
+
+
+unstructured[pdf] # unstructured[all-docs] [pdf]
+pillow
+lxml
+chromadb
+tiktoken
+langchain
+langchain-community
+langchain-openai
+langchain-groq
+python_dotenv
+ipykernel
