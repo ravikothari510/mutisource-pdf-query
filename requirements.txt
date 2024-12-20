@@ -15,3 +15,7 @@ langchain-openai
 langchain-groq
 python_dotenv
 ipykernel
+
+# pip install wheel
+# pip install --no-build-isolation 'git+https://github.com/facebookresearch/detectron2.git'
+

@@ -1,0 +1,21 @@
+FROM ubuntu:22.04
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update
+RUN apt-get install -y software-properties-common
+
+
+# Install python3.12 
+RUN add-apt-repository ppa:deadsnakes/ppa 
+RUN apt-get update  
+RUN apt-get install -y python3.12 python3-pip
+RUN apt-get install -y poppler-utils tesseract-ocr libmagic-dev libgl1 libsqlite3-dev
+
+# Install packages
+RUN apt-get install python3-distutils
+RUN python3 -m pip install --upgrade setuptools
+RUN python3 -m pip install --upgrade pip
+RUN pip3 install unstructured[pdf] pillow lxml chromadb \
+    tiktoken langchain langchain-community langchain-openai \
+    langchain-groq python_dotenv ipykernel ipywidgets PyMuPDF streamlit pysqlite3
+# remove chroma db and add pip install -qU "langchain-chroma>=0.1.2"

@@ -1,4 +1,7 @@
 .env
 *.pptx
 instruct.txt
+*.vscode
+./app/tmp
+**__pycache__**
 
