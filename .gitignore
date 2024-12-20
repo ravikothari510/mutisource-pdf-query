@@ -2,6 +2,6 @@
 *.pptx
 instruct.txt
 *.vscode
-./app/tmp
+*./app/tmp
 **__pycache__**
 
